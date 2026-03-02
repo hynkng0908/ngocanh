@@ -1,0 +1,156 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== MÀU CHỦ ĐẠO ===== */
+:root {
+    --brown-dark: #5c4033;     /* Nâu đậm */
+    --brown-medium: #8b5e3c;   /* Nâu vừa */
+    --brown-light: #e6d5c3;    /* Nâu nhạt */
+    --brown-bg: #f5eee6;       /* Nền rất nhẹ */
+}
+
+/* BODY */
+body {
+    background-color: var(--brown-bg);
+}
+
+/* HEADER */
+header {
+    background: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1") no-repeat center center/cover;
+    height: 250px;
+    position: relative;
+    color: white;
+}
+
+.overlay {
+    background-color: rgba(92, 64, 51, 0.7); /* phủ nâu đậm */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header h3 {
+    font-weight: normal;
+}
+
+/* NAV */
+nav {
+    background-color: var(--brown-dark);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 15px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--brown-light);
+}
+
+/* CONTAINER */
+.container {
+    width: 85%;
+    margin: 30px auto;
+}
+
+/* BOX CONTENT */
+.box {
+    background-color: var(--brown-light);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(92, 64, 51, 0.2);
+    border: 1px solid var(--brown-medium);
+}
+
+.box h2 {
+    margin-bottom: 15px;
+    color: var(--brown-dark);
+}
+
+/* DANH SÁCH HỌC SINH */
+.student-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.student {
+    text-align: center;
+    margin: 15px;
+}
+
+.student img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--brown-medium);
+}
+
+.student p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--brown-dark);
+}
+
+/* HÌNH KỶ NIỆM */
+.memory-img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+/* TEXTAREA */
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--brown-medium);
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--brown-medium);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--brown-dark);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--brown-dark);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
